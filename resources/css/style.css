@@ -1,1 +1,71 @@
 /* Universal Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* DESKTOP NAV SPECS */
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    margin: 0;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+ul {
+    align-items: center;
+    display: flex;
+    font-size: 20px;
+}
+.navbar ul li {
+    display: inline-block;
+    align-items: right;
+    align-items: center;
+    padding-right: 16px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: black;  
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 75px;
+    height: 75px;
+}
+
+.logo h2 {
+    color: gray;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.dark-text {
+    color: black;
+    font-weight: 600;
+    font-size: 32px;
+}
+
+/* MOBILE NAV SPECS */
