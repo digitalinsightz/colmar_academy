@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 body {
@@ -19,22 +19,22 @@ body {
     justify-content: space-between;
     background-color: white;
     margin: 0;
-    padding-left: 24px;
-    padding-right: 24px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: .625rem;
+    padding-bottom: .625rem;
 }
 
 ul {
     align-items: center;
     display: flex;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 .navbar ul li {
     display: inline-block;
     align-items: right;
     align-items: center;
-    padding-right: 16px;
+    padding-right: 1rem;
 }
 
 .navbar ul li a {
@@ -52,20 +52,51 @@ ul {
 }
 
 .logo img {
-    width: 75px;
-    height: 75px;
+    width: 4.6875rem;
+    height: 4.6875rem;
 }
 
 .logo h2 {
     color: gray;
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 600;
 }
 
 .dark-text {
     color: black;
     font-weight: 600;
-    font-size: 32px;
+    font-size: 2rem;
+}
+
+.mobile-navbar {
+    visibility: hidden;
 }
 
 /* MOBILE NAV SPECS */
+
+@media only screen and (max-width: 800px) {
+    .navbar {
+        display: none;
+    }
+
+    .mobile-navbar {
+        visibility: visible;
+        display: flex;
+        justify-content: center;
+        background-color: antiquewhite;
+    }
+
+    .mobile-navbar img {
+        width: 100%;
+        height: 4rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        display: flex;
+    }
+
+    .mobile-navbar ul {
+        list-style-type: none;
+    }
+}
